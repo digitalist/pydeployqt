@@ -15,6 +15,8 @@ git clone  https://github.com/digitalist/pydeployqt.git
 --objdump=/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump 
 ~/project/build/project.exe
 ```
+now you have all the libraries to run your app in Windows inside --build folder!
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
