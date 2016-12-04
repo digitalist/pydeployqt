@@ -1,6 +1,6 @@
 # pydeployqt
-Helps for building cross-plaftorm apps using MXE. This is a wrapper for  mingw32 objdump replacing windeployqt (which is missing from MXE. I don't know why they disabled it, but here it is.) 
-I use it to build apps with cmake.
+Helps to build cross-plaftorm apps using MXE (aka Linux->Windows). This is a wrapper for  mingw32 objdump /windeployqt substitute (windeployqt is missing from MXE. I don't know why they disabled it, but) 
+I use this script to build crossplatform apps with cmake.
 
 ## Installation
 install mxe. http://mxe.cc
