@@ -2,12 +2,12 @@
 """pyWindeployqt
 
 This is a wrapper for  mingw32 objdump replacing windeployqt which is missing from MXE
-I don't know why they disable it, but here it is.
+I don't know why they disabled it, but here it is.
 
 Example:
-./deploy.py --build=~/ClionProjects/engonewqt/build/ \
+./deploy.py --build=~/ClionProjects/project/build/ \
 --objdump=/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump \
-~/ClionProjects/engonewqt/build/EngoNewQt.exe
+~/ClionProjects/project/build/project.exe;
 
 """
 
@@ -45,14 +45,14 @@ if not args.libs:
     libs = objdump_path.replace('/bin', '').replace('-objdump','')
 
     
-# build_path = "/home/user/ClionProjects/engonewqt/build/"
+# build_path = "/home/user/ClionProjects/project/build/"
 # libs = "/home/user/mxe/usr/i686-w64-mingw32.shared"
 # objdump_path = "/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump"
-# target = "EngoNewQt.exe"
+# target = "project.exe"
 
 
 def run_check():
-    return subprocess.getoutput("wine EngoNewQt.exe")
+    return subprocess.getoutput("wine project.exe")
 
 
 def find_dll(dll):
