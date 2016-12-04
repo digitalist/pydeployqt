@@ -5,9 +5,11 @@ I don't know why they disabled it, but here it is.
 install mxe
 git clone  https://github.com/digitalist/pydeployqt.git
 ## Usage
-./deploy.py --build=~/ClionProjects/project/build/ \
+
+1) build your project
+2) ./deploy.py --build=~/project/build/ \
 --objdump=/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump \
-~/ClionProjects/project/build/project.exe;
+~/project/build/project.exe;
 
 ## Contributing
 1. Fork it!
