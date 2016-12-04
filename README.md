@@ -1,16 +1,20 @@
 # pydeployqt
-This is a wrapper for  mingw32 objdump replacing windeployqt which is missing from MXE
-I don't know why they disabled it, but here it is.
+Helps for building cross-plaftorm apps using MXE. This is a wrapper for  mingw32 objdump replacing windeployqt (which is missing from MXE. I don't know why they disabled it, but here it is.) 
+I use it to build apps with cmake.
+
 ## Installation
-install mxe
+install mxe. http://mxe.cc
+
 git clone  https://github.com/digitalist/pydeployqt.git
 ## Usage
 
 1) build your project
-2) ./deploy.py --build=~/project/build/ \
---objdump=/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump \
-~/project/build/project.exe;
-
+2) run
+```  
+./deploy.py --build=~/project/build/ 
+--objdump=/home/user/mxe/usr/bin/i686-w64-mingw32.shared-objdump 
+~/project/build/project.exe
+```
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
